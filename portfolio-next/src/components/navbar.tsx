@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 
@@ -20,7 +21,7 @@ const Navbar = () => {
             </div> */}
             <div className='flex items-center ease-in-out duration-300 hover:scale-110 hover:rotate-6'>
                 <a href="mailto:abhishektomarwork@gmail.com" className='text-white hover:line-through hover:text-blue-400'>Lets connect?</a>
-                <img className='w-50 h-10 ' src='../../assets/img/paper.png' alt="send mail" />
+                <Image width={40} height={40} src='/assets/img/paper.png' alt="send mail" />
             </div>
         </div>
         </div>
