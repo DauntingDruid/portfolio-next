@@ -4,15 +4,16 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <div className='w-full my-20'>
-      <p className='text-5xl'> 
+      <p className='xl:text-5xl md:text-3xl xs:text-2xl md:leading-relaxed xl:leading-relaxed xs:leading-relaxed'> 
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>Hi, </span> 
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> I'm</span> 
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> a </span>
-      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> Frontend </span>
-      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> Developer </span>
+      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> frontend </span>
+      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> developer </span>
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> based </span>
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> out </span>
-      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> of</span> New Delhi, 
+      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> of</span> 
+      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> New Delhi, </span> 
       <span className='ease-in-out duration-300 text-orange-200 hover:text-orange-600'> In</span>
       <span className='ease-in-out duration-300 text-gray-300 hover:text-white'>d</span>
       <span className='ease-in-out duration-300 text-green-200 hover:text-green-600'>ia</span>.<br /> 

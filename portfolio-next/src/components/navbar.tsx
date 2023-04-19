@@ -19,7 +19,7 @@ const Navbar = () => {
                 <a href="#">Contact</a>
             </div> */}
             <div className='flex items-center ease-in-out duration-300 hover:scale-110 hover:rotate-6'>
-                <a href="#" className='text-white hover:line-through hover:text-blue-400'>Lets connect?</a>
+                <a href="mailto:abhishektomarwork@gmail.com" className='text-white hover:line-through hover:text-blue-400'>Lets connect?</a>
                 <img className='w-50 h-10 ' src='../../assets/img/paper.png' alt="send mail" />
             </div>
         </div>
