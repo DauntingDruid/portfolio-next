@@ -6,7 +6,7 @@ const AboutSection = () => {
     <div className='w-full my-20'>
       <p className='xl:text-5xl md:text-3xl xs:text-2xl md:leading-relaxed xl:leading-relaxed xs:leading-relaxed'> 
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>Hi, </span> 
-      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> I'm</span> 
+      <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> I&apos;m</span> 
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> a </span>
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> frontend </span>
       <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'> developer </span>
