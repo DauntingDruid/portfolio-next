@@ -16,8 +16,19 @@
   }
 }
 
+.cursor{
+  background-color: rgba(216, 70, 239, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none
+}
+
 body {
-  /* cursor: none; */
+  cursor: none;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
