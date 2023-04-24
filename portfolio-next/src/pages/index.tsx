@@ -13,7 +13,6 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className="bg-gray-950 flex min-h-screen flex-col items-center ">
-      
       <div className="absolute z-0 h-full w-full">
         <Canvas> 
           <OrbitControls enableZoom={false} ></OrbitControls>
