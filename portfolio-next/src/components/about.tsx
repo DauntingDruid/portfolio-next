@@ -7,7 +7,7 @@ const AboutSection = () => {
       <p className='xl:text-4xl md:text-3xl xs:text-2xl md:leading-relaxed xl:leading-relaxed xs:leading-relaxed'> 
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>Hi </span> 
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>there, </span>
-        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>I'm </span>
+        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>I&apos;m </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>Abhishek, </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>a </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>front-end </span>
@@ -23,7 +23,7 @@ const AboutSection = () => {
         <span className='ease-in-out duration-300 text-green-200 hover:text-green-600'>ia</span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>. </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>When </span>
-        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>I'm </span>
+        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>I&apos;m </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>not </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>busy </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>creating </span>
@@ -56,13 +56,13 @@ const AboutSection = () => {
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>coding </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>away. </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>However, </span>
-        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>there's </span>
+        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>there&apos;s </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>one </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>thing </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>that </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>I </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>just </span>
-        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>can't </span>
+        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>can&apos;t </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>stand </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>- </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>pineapple </span>
@@ -70,7 +70,7 @@ const AboutSection = () => {
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>pizza. </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>Trust </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>me, </span>
-        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>it's </span>
+        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>it&apos;s </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>just </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>not </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>my </span>
@@ -84,7 +84,7 @@ const AboutSection = () => {
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>attention </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>to </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>detail, </span>
-        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>I'm </span>
+        <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>I&apos;m </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>dedicated </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>to </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600'>crafting </span>
