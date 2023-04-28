@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 const CursorCustom = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [cursorVariant, setCursorVariant] = useState('default')
-  console.log(mousePosition)
+  // console.log(mousePosition)
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
