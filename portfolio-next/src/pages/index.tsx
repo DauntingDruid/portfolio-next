@@ -8,6 +8,7 @@ import CursorCustom from '@/components/cursor'
 import { Canvas } from '@react-three/fiber'
 import { Center, Float, Loader, OrbitControls, PerspectiveCamera, Sparkles, Stars } from '@react-three/drei'
 import { useLayoutEffect, useState } from 'react'
+import { Vector3 } from 'three'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,19 +27,19 @@ function useWindowSize() {
 
 export default function Home() {
   const [width, height] = useWindowSize();
-  const [position, setPosition] = useState([4,-0.25,0]);
+  const [position, setPosition] = useState(new Vector3(4,-0.25,0));
 
   //change position of 3D model based on screen size
-  if(width < 1250 && width > 1000 && position[0] != 3) {
-    setPosition([3,-0.25,0])
-  }else if(width < 1000 && width > 750 && position[0] != 2) {
-    setPosition([2,-0.25,0])
-  }else if(width < 750 && width > 500 && position[0] != 1) {
-    setPosition([1,-0.25,0])
-  }else if(width < 500 && position[0] != 0) {
-    setPosition([0,-0.25,0])
-  }else if(width > 1250 && position[0] != 4) {
-    setPosition([4,-0.25,0])
+  if(width < 1250 && width > 1000 && position.x != 3) {
+    setPosition(new Vector3(3,-0.25,0))
+  }else if(width < 1000 && width > 750 && position.x != 2) {
+    setPosition(new Vector3(2,-0.25,0))
+  }else if(width < 750 && width > 500 && position.x != 1) {
+    setPosition(new Vector3(1,-0.25,0))
+  }else if(width < 500 && position.x != 0) {
+    setPosition(new Vector3(0,-0.25,0))
+  }else if(width > 1250 && position.x != 4) {
+    setPosition(new Vector3(4,-0.25,0))
   }
 
   return (
