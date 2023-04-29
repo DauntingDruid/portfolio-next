@@ -49,7 +49,7 @@ export default function Home() {
           <OrbitControls enableZoom={false} ></OrbitControls>
           <PerspectiveCamera zoom={2} makeDefault position={[5, 2, 16]} />
           <Float speed={2.5} >
-            <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+            <Stars radius={50} depth={100} count={10000} factor={4} saturation={0} fade speed={4} />
           </Float>
           <Center position={position}>
             <Float speed={2.5} >
