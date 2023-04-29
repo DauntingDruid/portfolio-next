@@ -4,7 +4,7 @@ import React from 'react'
 
 const Bottomnav = () => {
   return (
-    <div className='xs:flex-row sm:flex w-full justify-evenly'>
+    <div className='xs:flex-row sm:flex xs:w-full justify-evenly  lg:w-9/12'>
       <a className='cursor-none flex justify-center' download="AbhishekTomar_resume.pdf" href="../../assets/file/AbhishekTomar_resume.pdf">
         <Image width={80} height={80} src='/assets/img/applicant.png' className='ease-in-out duration-150 hover:scale-125'  alt="resume" />
       </a>
