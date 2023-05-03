@@ -10,6 +10,7 @@ import { Center, Float, Loader, OrbitControls, PerspectiveCamera, Sparkles, Star
 import { useEffect, useState } from 'react'
 import { Vector3 } from 'three'
 import LoadingScreen from '@/components/loadingScreen'
+import { motion } from 'framer-motion'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -54,7 +55,10 @@ export default function Home() {
     <main className="bg-gray-950 flex min-h-screen flex-col items-center ">
       {loaded ? <LoadingScreen />
       :<>
-      <div className="absolute z-0 h-full w-full">
+      <motion.div 
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}className="absolute z-0 h-full w-full">
         <Canvas> 
           <OrbitControls enableZoom={false} ></OrbitControls>
           <PerspectiveCamera zoom={2} makeDefault position={[5, 2, 16]} />
@@ -69,7 +73,7 @@ export default function Home() {
           </Center>  
         </Canvas>
         <Loader />
-      </div>
+      </motion.div>
       <div className="z-10 h-full p-12 sm:p-24 md:p-24 xl:p-24 xl:pt-12">
         <CursorCustom></CursorCustom>
         <Navbar />

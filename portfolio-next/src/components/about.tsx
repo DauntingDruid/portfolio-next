@@ -1,9 +1,13 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 
 const AboutSection = () => {
   return (
-    <div className='w-full my-20'>
+    <motion.div 
+    initial={{ opacity: 0, x: -100 }}
+    animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5 }}
+      className='w-full my-20'>
       <p className='xl:text-4xl md:text-3xl xs:text-2xl md:leading-relaxed xl:leading-relaxed xs:leading-relaxed xs:w-12/12 lg:w-8/12'> 
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600 hover:opacity-100 opacity-70'>Hi </span> 
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600 hover:opacity-100 opacity-70'>there, </span>
@@ -92,7 +96,7 @@ const AboutSection = () => {
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600 hover:opacity-100 opacity-70'>an </span>
         <span className='ease-in-out duration-300 text-fuchsia-100 hover:text-fuchsia-600 hover:opacity-100 opacity-70'>impact.</span>
       </p>
-    </div>
+    </motion.div>
   )
 }
 
