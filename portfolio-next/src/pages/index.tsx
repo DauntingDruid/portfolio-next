@@ -7,14 +7,15 @@ import Bottomnav from '@/components/bottomnav'
 import CursorCustom from '@/components/cursor'
 import { Canvas } from '@react-three/fiber'
 import { Center, Float, Loader, OrbitControls, PerspectiveCamera, Sparkles, Stars } from '@react-three/drei'
-import { useLayoutEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Vector3 } from 'three'
+import LoadingScreen from '@/components/loadingScreen'
 
 const inter = Inter({ subsets: ['latin'] })
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
+  useEffect(() => {
     function updateSize() {
       setSize([window.innerWidth, window.innerHeight]);
     }
@@ -28,6 +29,7 @@ function useWindowSize() {
 export default function Home() {
   const [width, height] = useWindowSize();
   const [position, setPosition] = useState(new Vector3(4,-0.25,0));
+  const [loaded, setLoaded] = useState(true);
 
   //change position of 3D model based on screen size
   if(width < 1250 && width > 1000 && position.x != 3) {
@@ -42,8 +44,16 @@ export default function Home() {
     setPosition(new Vector3(4,-0.25,0))
   }
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(false)
+    }, 5000)
+  }, [])
+
   return (
     <main className="bg-gray-950 flex min-h-screen flex-col items-center ">
+      {loaded ? <LoadingScreen />
+      :<>
       <div className="absolute z-0 h-full w-full">
         <Canvas> 
           <OrbitControls enableZoom={false} ></OrbitControls>
@@ -66,6 +76,8 @@ export default function Home() {
         <AboutSection></AboutSection>
         <Bottomnav></Bottomnav>
       </div>
+      </>}
+      
     </main>
   )
 }
