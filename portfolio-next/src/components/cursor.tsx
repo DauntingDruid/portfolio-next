@@ -35,6 +35,7 @@ const CursorCustom = () => {
       className="cursor"
       variants={variants}
       animate={cursorVariant}
+      transition={{ mass:0.1, stiffness: 100, duration: 0.1 , velocity: 1000}}
     />
   )
 }
