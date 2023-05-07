@@ -52,7 +52,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="bg-gray-950 flex min-h-screen flex-col items-center ">
+    <main className="bg-gray-950 flex h-screen w-screen flex-col items-center ">
       {loaded ? <LoadingScreen />
       :<>
       <motion.div 
