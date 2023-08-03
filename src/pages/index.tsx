@@ -7,10 +7,11 @@ import Bottomnav from '@/components/bottomnav'
 import CursorCustom from '@/components/cursor'
 import { Canvas } from '@react-three/fiber'
 import { Center, Float, Loader, OrbitControls, PerspectiveCamera, Sparkles, Stars } from '@react-three/drei'
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { Vector3 } from 'three'
 import LoadingScreen from '@/components/loadingScreen'
 import { motion } from 'framer-motion'
+import {SpaceModel} from '../components/spaceModel'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -58,23 +59,23 @@ export default function Home() {
       <motion.div 
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5 }}className="absolute z-0 h-full w-full">
+      transition={{ duration: 1.5 }}className="absolute h-full w-full">
         <Canvas> 
-          <OrbitControls enableZoom={false} ></OrbitControls>
-          <PerspectiveCamera zoom={2} makeDefault position={[5, 2, 16]} />
+          <OrbitControls enableZoom={true} ></OrbitControls>
+          <PerspectiveCamera makeDefault position={[8, 8, 8]} />
           <Float speed={2.5} >
-            <Stars radius={50} depth={100} count={10000} factor={4} saturation={0} fade speed={4} />
+            <Stars radius={1} depth={100} count={10000} factor={4} saturation={0} fade speed={4} />
           </Float>
-          <Center position={position}>
-            <Float speed={2.5} >
+          <Center position={[0,0,0]}>
               <Sparkles count={50} size={2.5} noise={1.5}></Sparkles>
-                <Background3D></Background3D>
-            </Float>
+              <Suspense fallback={null}>
+                <SpaceModel className='z-10' />
+              </Suspense>
           </Center>  
         </Canvas>
         <Loader />
       </motion.div>
-      <div className="z-10 h-full p-12 sm:p-24 md:p-24 xl:p-24 xl:pt-12">
+      <div className="h-full p-12 sm:p-24 md:p-24 xl:p-24 xl:pt-12">
         <CursorCustom></CursorCustom>
         <Navbar />
         <AboutSection></AboutSection>

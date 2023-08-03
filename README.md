@@ -43,3 +43,8 @@ https://abhishek-tomar.vercel.app/
 - [Three.js](https://threejs.org/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [react-spring](https://www.react-spring.dev/)
+ 
+ ## Extras
+
+convert gltf to glb
+gltf-pipeline -i scene.gltf -o head.gltf -d

@@ -3,7 +3,8 @@ import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 function Scene() {
-  const gltf = useLoader(GLTFLoader, './assets/rhetorician/scene.gltf')
+  const gltf = useLoader(GLTFLoader, './assets/3D-models/space_boi.glb')
+  // const gltf = useLoader(GLTFLoader, './assets/rhetorician/scene.gltf')
   return <primitive object={gltf.scene} />
 }
 
