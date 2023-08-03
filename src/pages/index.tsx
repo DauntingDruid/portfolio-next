@@ -60,6 +60,7 @@ export default function Home() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}className="absolute h-full w-full">
+        <CursorCustom></CursorCustom>
         <Canvas> 
           <OrbitControls enableZoom={true} ></OrbitControls>
           <PerspectiveCamera makeDefault position={[8, 8, 8]} />
@@ -75,8 +76,7 @@ export default function Home() {
         </Canvas>
         <Loader />
       </motion.div>
-      <div className="h-full p-12 sm:p-24 md:p-24 xl:p-24 xl:pt-12">
-        <CursorCustom></CursorCustom>
+      <div className="h-full p-12 sm:p-24 md:p-24 xl:p-24 xl:pt-12 flex flex-col justify-evenly">
         <Navbar />
         <AboutSection></AboutSection>
         <Bottomnav></Bottomnav>
