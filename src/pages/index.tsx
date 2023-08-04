@@ -65,7 +65,7 @@ export default function Home() {
           <OrbitControls enableZoom={true} ></OrbitControls>
           <PerspectiveCamera makeDefault position={[8, 8, 8]} />
           <Float speed={2.5} >
-            <Stars radius={1} depth={100} count={10000} factor={4} saturation={0} fade speed={4} />
+            <Stars radius={1} depth={200} count={10000} factor={4} saturation={0} fade speed={3.5} />
           </Float>
           <Center position={[0,0,0]}>
               <Sparkles count={50} size={2.5} noise={1.5}></Sparkles>
