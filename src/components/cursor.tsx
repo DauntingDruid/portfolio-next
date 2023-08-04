@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 import {motion} from 'framer-motion'
 
 const CursorCustom = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  //setting cursor position outside screen initial soo, it dosent appear as a static blob on load
+  const [mousePosition, setMousePosition] = useState({ x: -100, y: -100 })
   const [cursorVariant, setCursorVariant] = useState('default')
   // console.log(mousePosition)
 
@@ -31,12 +32,12 @@ const CursorCustom = () => {
   }
 
   return (
-    <motion.div
+      <motion.div
       className="cursor"
       variants={variants}
       animate={cursorVariant}
       transition={{ mass:0.1, stiffness: 100, duration: 0.1 , velocity: 1000}}
-    />
+      />
   )
 }
 
