@@ -3,7 +3,8 @@ import React, { useRef } from "react";
 import { Float, RandomizedLight, useGLTF } from "@react-three/drei";
 
 export function SpaceModel(props: any) {
-  const { nodes, materials } = useGLTF("./assets/3D-models/space_boi.glb");
+  //By using as any, we are telling TypeScript to trust our judgment and treat the result as having nodes and materials properties 
+  const { nodes, materials } = useGLTF("./assets/3D-models/space_boi.glb") as any;
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
